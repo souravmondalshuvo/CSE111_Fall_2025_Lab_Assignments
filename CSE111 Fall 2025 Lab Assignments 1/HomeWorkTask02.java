@@ -13,7 +13,7 @@ public class HomeWorkTask02 {
         } else {
             String final_word = "";
 
-            for (int i = 0; i < word.length(); i++) {
+            for (int i = 0; i<word.length(); i++) {
                 char ch = word.charAt(i);
 
                 if (ch == 'a') {
