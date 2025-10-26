@@ -16,7 +16,7 @@ public class HomeWorkTask03 {
 
         for (int i = 0; i<N; i++) {
             int repeated_number = 0;
-            for (int j = 0; j < i; j++) {
+            for (int j = 0; j<i; j++) {
                 if (number[i] == number[j]) {
                     repeated_number = 1;
                     break;
