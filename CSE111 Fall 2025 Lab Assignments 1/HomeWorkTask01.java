@@ -45,7 +45,7 @@ public class HomeWorkTask01 {
         
         }
         
-        System.out.println("There are " + prime_number_counter + " prime numbers between " + min_value + " and " + max_value + ".");
+        System.out.println("There are "+prime_number_counter+" prime numbers between "+min_value+" and "+max_value+".");
 
         sc.close();
     }
