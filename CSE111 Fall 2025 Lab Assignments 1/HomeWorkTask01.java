@@ -1,4 +1,4 @@
-//HomeWorkTask01
+//HomeWorkTask01 
 import java.util.*;
 public class HomeWorkTask01 {
     public static void main(String[] args) {
