@@ -109,6 +109,7 @@ class Employee {
         }
     }
 
+    @SuppressWarnings("ConvertToStringSwitch")
     public void promoteEmployee(String designation) {
         double increment = 0.0;
         String lowerCase = designation.toLowerCase();
