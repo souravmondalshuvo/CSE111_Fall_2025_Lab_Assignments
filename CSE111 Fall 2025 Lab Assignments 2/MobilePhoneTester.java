@@ -111,7 +111,6 @@ class MobilePhone {
     
         System.out.println("Calling " + number + " . . .");
     }
-
 }
 
 public class MobilePhoneTester{
