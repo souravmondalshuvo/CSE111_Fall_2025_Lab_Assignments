@@ -1,0 +1,82 @@
+//HomeWorkTask01
+
+public class Toy {
+
+    public String name;
+    public int price;
+
+    public Toy(String name, int price) {
+        this.name = name;
+        this.price = price;
+
+        System.out.println("A new toy has been made!");
+    }
+
+    public void updatePrice(int price) {
+        this.price = price;
+    }
+
+    public void showPrice() {
+        System.out.println("price: " + this.price + " Taka");
+    }
+
+    public void updateName(String name) {
+        
+        System.out.println("Changing old name: " + this.name);
+        
+        this.name = name;
+        System.out.println("new name: " + this.name);
+    }
+}
+
+//HomeWorkTask02
+
+public class Cart {
+
+    public String[] cart_item = new String[3];
+    public double[] price = new double[3];
+    public double discount;
+    public int cart_number;
+    public int item_count;
+
+    public void create_cart(int cart_number) {
+        this.cart_number = cart_number;
+    }
+
+    public void addItem(String item, double prc) {
+        if(item_count < 3) {
+            cart_item[item_count] = item;
+            price[item_count] = prc;
+            item_count++;
+            System.out.println(item + " added to " + cart_number + ".");
+            System.out.println("You have " + item_count + " item(s) in your cart now.");
+        } else {
+            System.out.println("You already have 3 items on your cart");
+        }
+    }
+
+    public void addItem(double prc, String item) {
+        addItem(item, prc);
+    }
+
+    public void cartDetails() {
+        System.out.println("Your cart (c" + cart_number + ") : ");
+
+        double total = 0.0;
+
+        for(int i = 0; i < item_count; i++) {
+            System.out.println(cart_item[i] + " - " + price[i]);
+            total += price[i];
+        }
+
+        double discountedTotal = total - (total * discount / 100);
+
+        System.out.println("Discount applied: " + discount + "%");
+        System.out.println("Total price: " + discountedTotal);
+    }
+
+    public void giveDiscount(double discount) {
+        this.discount = discount;
+    }
+}
+

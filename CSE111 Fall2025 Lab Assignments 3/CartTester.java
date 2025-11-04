@@ -95,23 +95,23 @@ Total price: 9631.917000000001
 
 class Cart {
 
-    public String[] cartItem = new String[3];
+    public String[] cart_item = new String[3];
     public double[] price = new double[3];
     public double discount;
-    public int cartNumber;
-    public int itemCount;
+    public int cart_number;
+    public int item_count;
 
-    public void create_cart(int cartNumber) {
-        this.cartNumber = cartNumber;
+    public void create_cart(int cart_number) {
+        this.cart_number = cart_number;
     }
 
     public void addItem(String item, double prc) {
-        if(itemCount < 3) {
-            cartItem[itemCount] = item;
-            price[itemCount] = prc;
-            itemCount++;
-            System.out.println(item + " added to " + cartNumber + ".");
-            System.out.println("You have " + itemCount + " item(s) in your cart now.");
+        if(item_count < 3) {
+            cart_item[item_count] = item;
+            price[item_count] = prc;
+            item_count++;
+            System.out.println(item + " added to " + cart_number + ".");
+            System.out.println("You have " + item_count + " item(s) in your cart now.");
         } else {
             System.out.println("You already have 3 items on your cart");
         }
@@ -122,12 +122,12 @@ class Cart {
     }
 
     public void cartDetails() {
-        System.out.println("Your cart (c" + cartNumber + ") : ");
+        System.out.println("Your cart (c" + cart_number + ") : ");
 
         double total = 0.0;
 
-        for(int i = 0; i < itemCount; i++) {
-            System.out.println(cartItem[i] + " - " + price[i]);
+        for(int i = 0; i < item_count; i++) {
+            System.out.println(cart_item[i] + " - " + price[i]);
             total += price[i];
         }
 
