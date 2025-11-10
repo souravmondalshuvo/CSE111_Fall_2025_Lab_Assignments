@@ -1,0 +1,129 @@
+//HomeWorkTask01
+
+public class ImaginaryNumber {
+    public int realPart;
+    public int imaginaryPart;
+
+    public String printNumber () {
+        return realPart + " + " + imaginaryPart + "i";
+    }
+}
+
+//HomeWorkTask02
+
+public class Assignment {
+    public int tasks;
+    public String difficulty;
+    public boolean submission;
+
+    public void printDetails() {
+        System.out.println("Number of tasks: " + this.tasks);
+        System.out.println("Difficulty level: " + this.difficulty);
+        System.out.println("Submission required: " + this.submission);
+    }
+
+    public String makeOptional() {
+        if (submission == true) {
+            submission = false;
+            return "Assignment will not require submission";
+        } else {
+            return "Submission is already not required";
+        }
+    }
+}
+
+//HomeWorkTask03
+
+public class Employee {
+    public String name;
+    public double salary = 30000.0;
+    public String designation = "junior";
+
+    public void newEmployee(String nm) {
+        this.name = nm;
+    }
+
+    public void displayInfo() {
+        System.out.println("Employee Name: " + this.name);
+        System.out.println("Employee Salary: " + this.salary);
+        System.out.println("Employee Designation: " + this.designation);
+    }
+
+    public void calculateTax() {
+        if (salary > 50000) {
+            double tax = salary * 0.30;
+            System.out.println(this.name + " Tax Amount: " + tax + "Tk");
+        } else if (salary == 30000) {
+            System.out.println("No need to pay tax");
+        } else {
+            double tax = salary * 0.10;
+            System.out.println(this.name + " Tax Amount: " + tax + "Tk");
+        }
+    }
+
+    public void promoteEmployee(String designation) {
+        double increment = 0.0;
+        String lowerCase = designation.toLowerCase();
+
+        if (lowerCase.equals("senior")) {
+            increment = 25000.0;
+        } else if (lowerCase.equals("lead")) {
+            increment = 50000.0;
+        } else if (lowerCase.equals("manager")) {
+            increment = 75000.0;
+        }
+
+        salary += increment;
+        this.designation = lowerCase;
+
+        System.out.println(this.name + " has been promoted to " + designation);
+        System.out.println("New Salary: " + salary + "Tk");
+    }
+}
+
+//HomeWorkTask04
+
+class MobilePhone {
+    public int contactCount;
+    public String[] contactNames;
+    public int[] contactNumbers;
+    public int capacity;
+
+    public void setContactCapacity(int capacity) {
+        this.capacity = capacity;
+        this.contactNames = new String[capacity];
+        this.contactNumbers = new int[capacity];
+        this.contactCount = 0;
+    }
+
+    public void details() {
+        System.out.println("Total Contacts: " + this.contactCount);
+        System.out.println("Contact List: ");
+        for (int i = 0; i < this.contactCount; i++) {
+            System.out.println(contactNames[i] + ":" + contactNumbers[i]);
+        }
+    }
+
+    public void addContact(String name, int number) {
+        if (contactCount < capacity) {
+            contactNames[contactCount] = name;
+            contactNumbers[contactCount] = number;
+            contactCount++;
+            System.out.println("The contact of " + name + " is added.");
+        } else {
+            System.out.println("Storage Full!!");
+        }
+    }
+
+    public void makeCall(int number) {
+    
+        for (int i = 0; i < contactCount; i++) {
+            if (contactNumbers[i] == number) {
+                System.out.println("Calling " + contactNames[i] + " . . .");
+                return;
+        }
+    }
+    
+        System.out.println("Calling " + number + " . . .");
+    }
+}
