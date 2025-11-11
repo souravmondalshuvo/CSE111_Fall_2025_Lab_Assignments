@@ -88,8 +88,8 @@ CSE110 ENG101 PHY112
 
 public class ConnectTester {
   public static void main(String[] args) {
-    Student1 rakib = new Student1("Rakib", 12301455, "CSE");
-    Student1 roy = new Student1("Roy", 12501345, "CS");
+    Student rakib = new Student("Rakib", 12301455, "CSE");
+    Student roy = new Student("Roy", 12501345, "CS");
     System.out.println("1*************");
     Connect connectObj = new Connect();
     System.out.println("2*************");
