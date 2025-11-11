@@ -1,18 +1,18 @@
 //HomeWorkTask02
 
-public class Student {
+public class Student1 {
     
     public int student_ID;
     public double cgpa;
     public String[] courses = new String[4];
     public int courses_count;
 
-    public Student(int student_ID) {
+    public Student1(int student_ID) {
         this.student_ID = student_ID;
         System.out.println("A student with ID " + student_ID + " has been created.");
     }
 
-    public Student(int student_ID, double cgpa) {
+    public Student1(int student_ID, double cgpa) {
         this.student_ID = student_ID;
         this.cgpa = cgpa;
         System.out.println("A student with ID " + student_ID + " and cgpa " + cgpa + " has been created.");
