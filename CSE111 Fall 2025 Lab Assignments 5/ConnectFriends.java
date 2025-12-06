@@ -1,3 +1,5 @@
+//HomeWorkTask04
+
 public class ConnectFriends {
     
     public String name;
