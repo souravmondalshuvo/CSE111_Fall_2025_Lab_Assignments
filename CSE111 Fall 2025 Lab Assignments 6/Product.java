@@ -1,3 +1,5 @@
+//HomeWorkTask01
+
 public class Product {
     
     public String name;
