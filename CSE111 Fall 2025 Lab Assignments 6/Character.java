@@ -1,3 +1,5 @@
+//HomeWorkTask02
+
 public class Character {
     
     public String name;
