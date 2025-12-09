@@ -6,4 +6,4 @@ All the CSE111 Fall 2025 Lab Assignment answers have been given here. Check it o
 <b style="font-weight: 900;">Disclaimer: DO NOT copy pasta the code. Copy pasta IF AND ONLY IF you wanna get plagiarised.</b>
 
 
-<i>Cheers!</i>
+<i>Otherwise, Enjoy <b>COPY PASTA</b>!</i>
