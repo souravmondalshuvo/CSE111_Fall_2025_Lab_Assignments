@@ -1,0 +1,233 @@
+//HomeWorkTask01
+
+public class Product {
+    
+    public String name;
+    public int quantity;
+    public static Product[] store = new Product[3];
+    public static int product_count;
+
+    public Product(String name, int quantity) {
+        this.name = name;
+        this.quantity = quantity;
+
+        if(product_count < store.length) {
+            store[product_count] = this;
+            product_count++;
+            System.out.println("Stored: " + this.name);
+        } else {
+            System.out.println("Storage is full! Cannot add " + this.name);
+        }
+    }
+
+    public static void displayProducts() {
+        System.out.println("==== Stored Products ===");
+        for(int i = 0; i < product_count; i++) {
+            System.out.println(store[i].name + " - Qty: " + store[i].quantity);
+        }
+    }
+
+    public static void buy(String name, int quantity) {
+        for(int i = 0; i < product_count; i++) {
+            if(store[i].name.equals(name)) {
+                if(store[i].quantity < quantity) {
+                    System.out.println("Quantity low");
+                    return;
+                }
+
+                store[i].quantity -= quantity;
+                System.out.println("Product Sold");
+                return;
+            }
+        }
+
+        System.out.println("Product not found");
+    }
+}
+
+//HomeWorkTask02
+
+public class Character {
+    
+    public String name;
+    public String group;
+    public int ID;
+    public int health;
+    public static int total_character;
+    public static int kid_count;
+    public static int teen_count;
+    public static int adult_count;
+    public static int total_health;
+    public static Character strongest = null;
+
+    public Character(String name, String group, int health) {
+        this.name = name;
+        this.group = group;
+        this.health = health;
+        this.ID = ++total_character;
+
+        if(group.equals("Kid")) {
+            kid_count++;
+        }
+        
+        if(group.equals("Teen")) {
+            teen_count++;
+        }
+
+        if(group.equals("Adult")) {
+            adult_count++;
+        }
+
+        total_health += health;
+
+        if(strongest == null || health > strongest.health) {
+            strongest = this;
+        }
+    }
+
+    public Character(String name, int health) {
+        this.name = name;
+        this.health = health;
+
+        if(health < 60) {
+            group = "Kid";
+        } else if(health < 100) {
+            group = "Teen";
+        } else {
+            group = "Adult";
+        }
+
+        this.ID = ++total_character;
+
+        if(group.equals("Kid")) {
+            kid_count++;
+        }
+        
+        if(group.equals("Teen")) {
+            teen_count++;
+        }
+
+        if(group.equals("Adult")) {
+            adult_count++;
+        }        
+
+        total_health += health;
+
+        if(strongest == null || health > strongest.health) {
+            strongest = this;
+        }
+    }
+
+    public void printDetails() {
+        System.out.println("ID: " + this.ID + ", Name: " + this.name);
+        System.out.println("Group: " + this.group);
+        System.out.println("Health: " + this.health);
+    }
+
+    public static void printStats() {
+        System.out.println("Total Characters: " + total_character);
+        System.out.println("Kids: " + kid_count);
+        System.out.println("Teens: " + teen_count);
+        System.out.println("Adults: " + adult_count);
+
+        double average = 0;
+
+        if(total_character > 0) {
+            average = (double) total_health / total_character;
+        }
+        System.out.println("Average Health: " + average);
+
+        System.out.print("Strongest Character: ");
+        if(strongest == null) {
+            System.out.println("None");
+        } else {
+            System.out.println();
+            System.out.println(strongest.name + " (Health " + strongest.health + ")");
+        }
+    }
+}
+
+//HomeWorkTask03
+
+public class Artifact {
+    
+    private String name;
+    private String added;
+    private int power;
+    private static Artifact[] vault = new Artifact[4];
+    private static int artifact_count;
+    
+    public Artifact(String name, String added) {
+        this.name = name;
+        this.added = added;
+        this.power = CalcPower();
+    }
+
+    public Artifact(String name) {
+        this.name = name;
+        this.added = "Okabe";
+        this.power = CalcPower();
+    }
+
+    public String GetName() {
+        return name;
+    }
+
+    public int CalcPower() {
+        int sum = 0;
+
+        if(name.length() % 2 == 0) {
+            for(int i = 0; i < name.length(); i += 2) {
+                sum += name.charAt(i);
+            }
+        } else {
+            for(int i = 1; i < name.length(); i += 2) {
+                sum += name.charAt(i);
+            }
+        }
+
+        return sum;
+    }
+
+    public void revealArtifact() {
+        System.out.println(this.name + " added by " + this.added + " has power of " + this.power + ".");
+    }
+
+    public void changeName(String new_name) {
+        this.name = new_name;
+        this.power = CalcPower();
+        System.out.println("Name changed and power recalculated.");
+    }
+
+    public static void AddtoVault(Artifact artifact) {
+
+        if(artifact_count < 4) {
+            vault[artifact_count++] = artifact;
+            System.out.println(artifact.added + " added " + artifact.name + " successfully to the vault.");
+        } else {
+            System.out.println("!!" + artifact.added + " unsuccessful in adding artifact to the vault!!");
+        }
+    }
+
+    public static void labReport() {
+        System.out.println("=== Future Gadget Lab ===");
+
+        for(int i = 0; i < artifact_count; i++) {
+            System.out.println(vault[i].name + " added by " + vault[i].added + " has power of " + vault[i].power);
+        }
+    }
+
+    public static String strongest() {
+
+        Artifact strongest = vault[0];
+
+        for(int i = 1; i < artifact_count; i++) {
+            if(vault[i].power > strongest.power) {
+                strongest = vault[i];
+            }
+        }
+
+        return strongest.name;
+    }
+}
+
