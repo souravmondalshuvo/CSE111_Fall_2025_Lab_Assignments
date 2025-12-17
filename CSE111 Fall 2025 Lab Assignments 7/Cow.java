@@ -1,16 +1,18 @@
 //HomeWorkTask01
 
-public class Circle extends Shape {
+public class Cow extends Animal {
     
-    public int radius;
+    public String name;
 
-    @Override
-    public void displayInfo() {
-        super.displayInfo();
+    public Cow() {
+        System.out.println("The cow says hello!");
     }
 
-    public void area() {
-        double area = Math.PI * radius * radius;
-        System.out.printf("Area of %s %s: %.2f\n", color, name, area);
+    public String getName(String name) {
+        return name;
+    }
+
+    public void updateSound(String sound) {
+        this.sound = sound;
     }
 }
