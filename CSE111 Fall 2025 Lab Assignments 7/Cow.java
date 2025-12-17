@@ -8,7 +8,7 @@ public class Cow extends Animal {
         System.out.println("The cow says hello!");
     }
 
-    public String getName(String name) {
+    public String getName() {
         return name;
     }
 
