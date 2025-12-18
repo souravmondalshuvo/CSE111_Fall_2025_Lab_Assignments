@@ -1,16 +1,11 @@
-public class Student {
-    private String name = "Just a Student";
-    private String department = "nothing";
+public class Account {
+    public double balance = 0.0;
 
-    public void setDepartment(String dpt) {
-        this.department = dpt;
+    public Account(double balance) {
+        this.balance = balance;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void details() {
-        System.out.println("Name : " + name + " Department: " + department);
+    public double showBalance() {
+        return balance;
     }
 }

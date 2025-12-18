@@ -28,7 +28,7 @@ public class TestAccount{
     System.out.println("Total Checking Accounts: "+CheckingAccount.count);
   }
 }
-
+ 
 Output
 Total Checking Accounts: 0
 Account Balance: 0.0
