@@ -1,53 +1,51 @@
 /*
 Task 2
-Given the following classes, write the code for the BBAStudent class so that the following output is printed when we run the TestStudent class.
+
+Design the CheckingAccount class derived from the Account class with appropriate attributes and properties so that the driver code can generate the output given below. 
 
 Driver Code and Parent Class 
-public class TestStudent{
-  public static void main(String [] args){
-    BBAStudent b1 = new BBAStudent();
-    BBAStudent b2 = new BBAStudent("Humty Dumty");
-    BBAStudent b3 = new BBAStudent("Little Bo Peep"); 
-    b1.details();
-    System.out.println("1---------------");
-    b2.details();
-    System.out.println("2---------------");
-    b3.details();
+public class Account{
+  public double balance = 0.0;
+  
+  public Account(double balance){
+    this.balance = balance;
+  }
+  public double showBalance(){
+    return balance;
   }
 }
-
-public class Student{
-  private String name = "Just a Student"; 
-  private String department = "nothing";
-  
-  public void setDepartment(String dpt){
-    this.department = dpt;
-  }
-  public void setName(String name){
-    this.name = name;
-  }
-  public void details(){
-    System.out.println("Name : " + name + " Department: " + department);
+ 
+//Tester Class
+public class TestAccount{
+  public static void main(String [] args){
+    System.out.println("Total Checking Accounts: "+CheckingAccount.count);
+    CheckingAccount c1 = new CheckingAccount();
+    System.out.println("Account Balance: " + c1.showBalance());
+    CheckingAccount c2 = new CheckingAccount(100.0);
+    System.out.println("Account Balance: " + c2.showBalance());
+    CheckingAccount c3 = new CheckingAccount(200.0);
+    System.out.println("Account Balance: " + c3.showBalance());
+    System.out.println("Total Checking Accounts: "+CheckingAccount.count);
   }
 }
 
 Output
-Name: Default Department: BBA
-1---------------
-Name: Humty Dumty Department: BBA
-2---------------
-Name: Little Bo Peep Department: BBA
+Total Checking Accounts: 0
+Account Balance: 0.0
+Account Balance: 100.0
+Account Balance: 200.0
+Total Checking Accounts: 3
 */
 
-public class TestStudent {
-    public static void main(String[] args) {
-        BBAStudent b1 = new BBAStudent();
-        BBAStudent b2 = new BBAStudent("Humty Dumty");
-        BBAStudent b3 = new BBAStudent("Little Bo Peep");
-        b1.details();
-        System.out.println("1---------------");
-        b2.details();
-        System.out.println("2---------------");
-        b3.details();
-    }
+public class TestAccount {
+  public static void main(String[] args) {
+    System.out.println("Total Checking Accounts: " + CheckingAccount.count);
+    CheckingAccount c1 = new CheckingAccount();
+    System.out.println("Account Balance: " + c1.showBalance());
+    CheckingAccount c2 = new CheckingAccount(100.0);
+    System.out.println("Account Balance: " + c2.showBalance());
+    CheckingAccount c3 = new CheckingAccount(200.0);
+    System.out.println("Account Balance: " + c3.showBalance());
+    System.out.println("Total Checking Accounts: " + CheckingAccount.count);
+  }
 }
