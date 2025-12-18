@@ -1,14 +1,16 @@
 //HomeWorkTask02
 
-public class BBAStudent extends Student{
-    
-    public BBAStudent() {
-        setName("Default");
-        setDepartment("BBA");
+public class CheckingAccount extends Account {
+
+    public static int count;
+
+    public CheckingAccount() {
+        super(0.0);
+        count++;
     }
 
-    public BBAStudent(String name) {
-        setName(name);
-        setDepartment("BBA");
+    public CheckingAccount(double balance) {
+        super(balance);
+        count++;
     }
 }
