@@ -12,16 +12,17 @@ public class CSEStudent extends Student {
 
     public void addLabBasedCourse(String course) {
 
-        int i = 0;
+        int i;
 
-        for(int j = 0; j < lab_courses.length; j++) {
-            if(lab_courses[j].equals(course)) {
+        for(i = 0; i < lab_courses.length; i++) {
+            if(lab_courses[i].equals(course)) {
                 break;
             }
         }
 
         if(i == lab_courses.length) {
             System.out.println("It is not a lab based course!");
+            return;
         }
 
         if(!courses.contains(course)) {
@@ -33,7 +34,7 @@ public class CSEStudent extends Student {
         System.out.println("Total CSE Students: " + student_count);
         System.out.println("Available Lab Based Courses: ");
         for(int i = 0; i < lab_courses.length; i++) {
-            System.out.println(lab_courses[i] + " ");
+            System.out.print(lab_courses[i] + " ");
         }
         System.out.println();
     }
