@@ -17,7 +17,7 @@ public class Butterfly extends Caterpillar {
         energy += amount * 5;
         System.out.println("Butterfly lost energy while flying and absorbed necter");
     }
-
+ 
     @Override
     public void showDetails() {
         System.out.println("Food: " + food);
