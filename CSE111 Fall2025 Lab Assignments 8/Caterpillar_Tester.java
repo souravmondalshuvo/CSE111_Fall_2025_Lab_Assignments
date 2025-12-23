@@ -79,7 +79,7 @@ Age: 2
 Energy: 5.0 joules
 Food: Cotton
 Age: 4
-Energy: 10.0 joules
+Energy: 10.0 joules 
 */
 
 public class Caterpillar_Tester {
