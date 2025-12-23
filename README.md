@@ -29,8 +29,9 @@ CSE111_Fall_2025_Lab_Assignments/
 ├── CSE111 Fall 2025 Lab Assignments 6/
 ├── CSE111 Fall 2025 Lab Assignments 7/
 ├── CSE111 Fall 2025 Lab Assignments 8/
-├── README.md
-└── LICENSE
+├── .gitignore
+├── LICENSE
+└── README.md
 ```
 
 ## ✅ Contents
