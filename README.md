@@ -1,9 +1,58 @@
-# CSE111_Fall_2025_Lab_Assignments
+# CSE111 Fall 2025 Lab Assignments
 
-All the CSE111 Fall 2025 Lab Assignment answers have been given here. Check it out if you can't solve the code. Use it just to get the idea how it is solved. 
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
+This repository contains solutions to **CSE111 (Programming Language II)**  
+**Fall 2025 Lab Assignments**.
 
-<b style="font-weight: 900;">Disclaimer: DO NOT copy pasta the code. Copy pasta IF AND ONLY IF you wanna get plagiarised.</b>
+---
 
+## 📚 Course Information
+- **Course Code:** CSE111  
+- **Semester:** Fall 2025  
+- **Institution:** BRAC University  
+- **Language Used:** Java  
 
-<i>Otherwise, Enjoy <b>COPY PASTA</b>!</i>
+---
+
+## 📁 Repository Structure
+
+Each folder corresponds to a specific lab assignment:
+
+CSE111_Fall_2025_Lab_Assignments/
+│
+├── CSE111 Fall 2025 Lab Assignments 1/
+├── CSE111 Fall 2025 Lab Assignments 2/
+├── CSE111 Fall 2025 Lab Assignments 3/
+├── CSE111 Fall 2025 Lab Assignments 4/
+├── CSE111 Fall 2025 Lab Assignments 5/
+├── CSE111 Fall 2025 Lab Assignments 6/
+├── CSE111 Fall 2025 Lab Assignments 7/
+├── CSE111 Fall 2025 Lab Assignments 8/
+│
+├── README.md
+└── LICENSE
+
+---
+
+## ✅ Contents
+- Lab problem statements
+- Java source code solutions
+- Assignment-wise organized structure
+
+---
+
+## ⚠️ Academic Notice
+These solutions are provided **for learning and reference purposes only**.  
+If you are currently enrolled in this course, **do not submit this code directly** as your own work.
+
+---
+
+## 📄 License
+This project is licensed under the **MIT License**.  
+See the [LICENSE](LICENSE) file for details.
+
+---
+
+## 👤 Author
+**Sourav Mondal Shuvo**
