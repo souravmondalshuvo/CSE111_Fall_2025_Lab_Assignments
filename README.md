@@ -7,6 +7,7 @@ This repository contains solutions to **CSE111 (Programming Language II) Fall 20
 ---
 
 ## 📚 Course Information
+- **Course Title:** Programming Language II
 - **Course Code:** CSE111  
 - **Semester:** Fall 2025  
 - **Institution:** BRAC University  
