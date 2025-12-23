@@ -1,9 +1,8 @@
 # CSE111 Fall 2025 Lab Assignments
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
 
-This repository contains solutions to **CSE111 (Programming Language II)**  
-**Fall 2025 Lab Assignments**.
+This repository contains solutions to **CSE111 (Programming Language II) Fall 2025 Lab Assignments**.
 
 ---
 
@@ -32,8 +31,6 @@ CSE111_Fall_2025_Lab_Assignments/
 │
 ├── README.md
 └── LICENSE
-
----
 
 ## ✅ Contents
 - Lab problem statements
