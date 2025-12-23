@@ -22,7 +22,7 @@ public class Caterpillar {
     public void transform() {
         System.out.println("Caterpillar transforms");
     }
-
+ 
     public void showDetails() {
         System.out.println("Food: " + food);
         System.out.println("Age: " + age);
