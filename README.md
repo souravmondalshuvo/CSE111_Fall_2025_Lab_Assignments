@@ -11,7 +11,7 @@ This repository contains solutions to **CSE111 (Programming Language II) Fall 20
 - **Course Code:** CSE111  
 - **Semester:** Fall 2025  
 - **Institution:** BRAC University  
-- **Language Used:** Java  
+- **Language Used:** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a>Java  
 
 ---
 
