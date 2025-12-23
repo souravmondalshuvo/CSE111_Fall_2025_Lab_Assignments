@@ -19,7 +19,7 @@ This repository contains solutions to **CSE111 (Programming Language II) Fall 20
 Each folder corresponds to a specific lab assignment:
 
 CSE111_Fall_2025_Lab_Assignments/<br>
-│<br>
+ │<br>
 ├── CSE111 Fall 2025 Lab Assignments 1/<br>
 ├── CSE111 Fall 2025 Lab Assignments 2/<br>
 ├── CSE111 Fall 2025 Lab Assignments 3/<br>
@@ -28,7 +28,7 @@ CSE111_Fall_2025_Lab_Assignments/<br>
 ├── CSE111 Fall 2025 Lab Assignments 6/<br>
 ├── CSE111 Fall 2025 Lab Assignments 7/<br>
 ├── CSE111 Fall 2025 Lab Assignments 8/<br>
-│<br>
+ │<br>
 ├── README.md<br>
 └── LICENSE
 
