@@ -51,5 +51,4 @@ See the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 👤 Author
-**Sourav Mondal Shuvo**
+## 👤 Author: **Sourav Mondal Shuvo**
