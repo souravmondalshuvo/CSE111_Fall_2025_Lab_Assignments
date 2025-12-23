@@ -1,5 +1,3 @@
-//HomeWorkTask01
-
 public class Caterpillar {
     public String food;
     public int age;
@@ -16,9 +14,9 @@ public class Caterpillar {
         System.out.println("Caterpillar ate 1 unit of food");
     }
 
-    public void eat(int quantity) {
-        energy += quantity;
-        System.out.println("Caterpillar ate " + quantity + " units of food");
+    public void eat(int amount) {
+        energy += amount;
+        System.out.println("Caterpillar ate " + amount + " units of food");
     }
 
     public void transform() {
